@@ -10,10 +10,10 @@ import unittest
 import splinter
 from splinter import Browser
 from splinter.exceptions import DriverNotFoundError
-
+##test 1234
 ## @brief test-cases
 class TestFunctionalDnaasm(unittest.TestCase):
-    
+
     ## Browser used for testing - default Google Chrome
     browser = ''
     admin_user = ''
@@ -119,7 +119,7 @@ class TestFunctionalDnaasm(unittest.TestCase):
         self.assertEqual(self.browser.find_by_id('showHelpWindowButton').first['title'], u"Kliknij, aby zobaczyć pomoc dla aplikacji")
         self.assertEqual(self.browser.find_by_id('a_lang_en').first['title'], u"Kliknij, aby zmienić język na angielski")
         self.assertEqual(self.browser.find_by_id('a_lang_pl').first['title'], u"Kliknij, aby zmienić język na polski")
-        
+
         def test04HelpPageENG(self):
         """test 'help' page_eng"""
         self.browser.reload()
@@ -143,7 +143,7 @@ class TestFunctionalDnaasm(unittest.TestCase):
         self.assertEqual(len(self.browser.find_by_text(u'db version: PostgreSQL 9.4.18 on x86_64-unknown-linux-gnu')), 1)
         self.assertEqual(len(self.browser.find_by_text(u'server version: 0.07.1635; Python: 3.5.3; Arch: ; Os: Linux #1 SMP Debian 4.9.110-1 (2018-07-05); Django: 2.0.2')), 1)
         self.assertEqual(len(self.browser.find_by_text(u'client version: 0.06.1634')), 1)
-        
+
         def test05HelpPagePL(self):
         """test 'help' page_pl"""
         self.browser.reload()
