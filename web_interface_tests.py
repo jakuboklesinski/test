@@ -38,6 +38,8 @@ class TestFunctionalDnaasm(unittest.TestCase):
         except:
             pass
 
+##drjghsrkljghrkljh
+
     def clickCssLink(self, ident, interval=0.1, maxTime=2):
         """Searches for an css and clicks it"""
         browser = self.browser
